@@ -1,4 +1,4 @@
-package org.example;
+package com.zinopay.membership;
 
 
 import lombok.RequiredArgsConstructor;

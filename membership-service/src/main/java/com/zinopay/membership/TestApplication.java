@@ -1,4 +1,4 @@
-package org.example;
+package com.zinopay.membership;
 
 
 import org.springframework.boot.SpringApplication;
