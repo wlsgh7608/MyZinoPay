@@ -28,8 +28,8 @@ public class RegisterMembershipService implements RegisterMembershipUsecase {
                 command.getName(),
                 command.getEmail(),
                 command.getAddress(),
-                command.isValid(),
-                command.isCorp()
+                command.isCorp(),
+                command.isValid()
         );
         // entity -> domain으로 변환
         return membershipMapper.toDomain(membershipEntity);

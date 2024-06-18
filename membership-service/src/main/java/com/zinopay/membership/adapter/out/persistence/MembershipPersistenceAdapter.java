@@ -1,12 +1,13 @@
 package com.zinopay.membership.adapter.out.persistence;
 
+import com.zinopay.membership.application.port.out.FindMembershipPort;
 import com.zinopay.membership.application.port.out.RegisterMembershipPort;
 import common.PersistenceAdapter;
 import lombok.RequiredArgsConstructor;
 
 @PersistenceAdapter
 @RequiredArgsConstructor
-public class MembershipPersistenceAdapter implements RegisterMembershipPort {
+public class MembershipPersistenceAdapter implements RegisterMembershipPort, FindMembershipPort {
     private final MembershipRepository membershipRepository;
 
     @Override
@@ -20,6 +21,10 @@ public class MembershipPersistenceAdapter implements RegisterMembershipPort {
                         isCorp
                 )
         );
+    }
 
+    @Override
+    public MembershipEntity findMembership(String membershipId) {
+        return membershipRepository.findById(Long.parseLong(membershipId)).orElseThrow(() -> new RuntimeException());
     }
 }

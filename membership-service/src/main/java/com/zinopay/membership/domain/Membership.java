@@ -25,16 +25,17 @@ public class Membership {
             String name,
             String email,
             String address,
-            boolean isValid,
-            boolean isCorp
-    ) {
+            boolean isCorp,
+            boolean isValid
+            ) {
         return new Membership(
                 membershipId+"",
                 name,
                 email,
                 address,
-                isValid,
-                isCorp);
+                isCorp,
+                isValid
+                );
     }
 
 
