@@ -1,3 +1,4 @@
 rootProject.name = 'MyZinoPay'
 include 'membership-service'
+include 'common'
 

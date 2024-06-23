@@ -1,4 +1,4 @@
-package common;
+package com.zinopay.common;
 
 
 import org.springframework.core.annotation.AliasFor;
@@ -10,7 +10,7 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 @Component
-public @interface WebAdapter  {
+public @interface UseCase {
 
 
     @AliasFor(annotation = Component.class)

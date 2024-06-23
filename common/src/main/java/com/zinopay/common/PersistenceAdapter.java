@@ -1,4 +1,4 @@
-package common;
+package com.zinopay.common;
 
 
 import org.springframework.core.annotation.AliasFor;

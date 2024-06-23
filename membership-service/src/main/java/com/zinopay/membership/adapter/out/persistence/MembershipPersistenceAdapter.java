@@ -1,8 +1,8 @@
 package com.zinopay.membership.adapter.out.persistence;
 
+import com.zinopay.common.PersistenceAdapter;
 import com.zinopay.membership.application.port.out.FindMembershipPort;
 import com.zinopay.membership.application.port.out.RegisterMembershipPort;
-import common.PersistenceAdapter;
 import lombok.RequiredArgsConstructor;
 
 @PersistenceAdapter

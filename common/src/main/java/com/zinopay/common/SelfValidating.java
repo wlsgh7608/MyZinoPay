@@ -1,4 +1,5 @@
-package common;
+package com.zinopay.common;
+
 
 import jakarta.validation.*;
 

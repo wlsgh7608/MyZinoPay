@@ -1,7 +1,7 @@
 package com.zinopay.membership.application.port.in;
 
 
-import common.SelfValidating;
+import com.zinopay.common.SelfValidating;
 import jakarta.validation.constraints.NotNull;
 import lombok.Builder;
 import lombok.Data;

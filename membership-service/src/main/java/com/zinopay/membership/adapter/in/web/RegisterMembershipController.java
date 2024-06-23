@@ -1,14 +1,11 @@
 package com.zinopay.membership.adapter.in.web;
 
 
+import com.zinopay.common.WebAdapter;
 import com.zinopay.membership.application.port.in.RegisterMembershipCommand;
 import com.zinopay.membership.application.port.in.RegisterMembershipUsecase;
 import com.zinopay.membership.domain.Membership;
-import common.WebAdapter;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationContext;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;

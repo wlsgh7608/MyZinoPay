@@ -1,12 +1,12 @@
 package com.zinopay.membership.application.service;
 
+import com.zinopay.common.UseCase;
 import com.zinopay.membership.adapter.out.persistence.MembershipEntity;
 import com.zinopay.membership.adapter.out.persistence.MembershipMapper;
 import com.zinopay.membership.application.port.in.FindMembershipCommand;
 import com.zinopay.membership.application.port.in.FindMembershipUseCase;
 import com.zinopay.membership.application.port.out.FindMembershipPort;
 import com.zinopay.membership.domain.Membership;
-import common.UseCase;
 import lombok.RequiredArgsConstructor;
 
 
