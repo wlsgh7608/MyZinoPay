@@ -21,7 +21,6 @@ public class RegisterMembershipService implements RegisterMembershipUsecase {
     @Override
     public Membership registerMembership(RegisterMembershipCommand command) {
         // command => DB 통신
-
         // 하지만 DB는 외부 서비스
         // port와 adapter을 통해야만 나갈 수 있음
         MembershipEntity membershipEntity = registerMembershipPort.registerMembership(
@@ -31,6 +30,7 @@ public class RegisterMembershipService implements RegisterMembershipUsecase {
                 command.isCorp(),
                 command.isValid()
         );
+        System.out.println("membershipEntity = " + membershipEntity);
         // entity -> domain으로 변환
         return membershipMapper.toDomain(membershipEntity);
     }

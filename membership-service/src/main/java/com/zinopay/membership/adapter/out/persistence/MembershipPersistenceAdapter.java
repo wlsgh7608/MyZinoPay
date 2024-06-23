@@ -11,14 +11,14 @@ public class MembershipPersistenceAdapter implements RegisterMembershipPort, Fin
     private final MembershipRepository membershipRepository;
 
     @Override
-    public MembershipEntity registerMembership(String name, String email, String address, boolean isValid, boolean isCorp) {
+    public MembershipEntity registerMembership(String name, String email, String address, boolean isCorp, boolean isValid) {
         return membershipRepository.save(
                 new MembershipEntity(
                         name,
-                        email,
                         address,
-                        isValid,
-                        isCorp
+                        email,
+                        isCorp,
+                        isValid
                 )
         );
     }

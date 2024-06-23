@@ -7,6 +7,6 @@ public interface RegisterMembershipPort {
             String name,
             String email,
             String address,
-            boolean isValid,
-            boolean isCorp);
+            boolean isCorp,
+            boolean isValid);
 }
